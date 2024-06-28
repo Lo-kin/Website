@@ -1,1 +1,14 @@
-test content
+<p id="demo">No One Was Here</p>
+
+<script>
+
+x = 0
+function countSecond() 
+{　
+    x = x+1
+    document.getElementById("demo").innerHTML = x;
+    setTimeout("countSecond()", 1000)
+}
+// 执行函数
+countSecond()
+</script>
